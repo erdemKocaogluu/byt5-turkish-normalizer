@@ -50,7 +50,7 @@ The top 3 checkpoints by `selection_score` are kept on disk; the best one is pro
 
 ![Gold evaluation — WER, model vs. do-nothing baseline](reports/training/07_gold_wer.png)
 
-More charts (loss curves, quality-vs-preservation trade-off, learning rate schedule) and full per-checkpoint tables are in [`reports/training/`](reports/training/) and the interactive dashboard [`reports/training/dashboard.html`](reports/training/dashboard.html).
+More charts (loss curves, quality-vs-preservation trade-off, learning rate schedule) and full per-checkpoint tables are in [`reports/training/`](reports/training/) and the interactive dashboard [`reports/training/dashboard.html`](reports/training/dashboard.html) — also viewable live at **[erdemkocaogluu.github.io/byt5-turkish-normalizer](https://erdemkocaogluu.github.io/byt5-turkish-normalizer/reports/training/dashboard.html)**.
 
 ## Limitations
 
