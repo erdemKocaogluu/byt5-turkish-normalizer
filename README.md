@@ -92,4 +92,4 @@ python src/eval/rapor_uret.py            # regenerate the charts in reports/trai
 
 ## License
 
-Code is released under the [MIT License](LICENSE). The model itself is released separately on Hugging Face under Apache 2.0.
+Code is released under the [MIT License](LICENSE). The model itself is released separately on Hugging Face under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (non-commercial) — see the [model card](https://huggingface.co/erdemKocaogluu/byt5-small-tr-normalizer) for details.
