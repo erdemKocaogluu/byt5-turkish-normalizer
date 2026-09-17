@@ -40,10 +40,12 @@ The top 3 checkpoints by `selection_score` are kept on disk; the best one is pro
 
 ### Held-out gold sets (naturally occurring, human-written Turkish — never seen during training)
 
-| Test set | n | WER (model) | WER (no correction) | F1 | Over-correction |
-|---|---|---|---|---|---|
-| tweets | 1,742 | 0.161 | 0.336 | 0.667 | 0.6% |
-| boun | 507 | 0.093 | 0.129 | 0.590 | 4.3% |
+| Test set | n | WER (model) | WER (copy) | CER (model) | CER (copy) | F1 | Over-correction |
+|---|---|---|---|---|---|---|---|
+| tweets | 1,742 | 0.161 | 0.336 | 0.034 | 0.071 | 0.667 | 0.6% |
+| boun | 507 | 0.093 | 0.129 | 0.043 | 0.015 | 0.590 | 4.3% |
+
+*"copy" = do-nothing baseline (source passed through unchanged). On boun, model CER is slightly higher than the copy baseline's CER even though WER improves substantially — WER and CER don't always move together, since a small number of larger character-level edits can outweigh many small word-level fixes.*
 
 - *tweets* — Köksal, A. T., Bozal, Ö., Yürekli, E., & Gezici, G. (2020). [#Turki$hTweets: A Benchmark Dataset for Turkish Text Correction](https://aclanthology.org/2020.findings-emnlp.374/). *Findings of ACL: EMNLP 2020*, pages 4190–4198.
 - *boun* — Kara, A., Marouf Sofian, F., Bond, A., & Şahin, G. (2023). [GECTurk: Grammatical Error Correction and Detection Dataset for Turkish](https://aclanthology.org/2023.findings-ijcnlp.26/). *Findings of ACL: IJCNLP-AACL 2023*, pages 278–290.
