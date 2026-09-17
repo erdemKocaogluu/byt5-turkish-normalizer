@@ -7,7 +7,6 @@
 | Model | google/byt5-small |
 | Device | cuda |
 | Date | 2026-09-08 08:16:54 |
-| Training sentences | 4,528,207 |
 | Eval noisy (quality) | 3000 |
 | Eval clean (preservation) | 3000 |
 | Batch | 16 |
