@@ -40,7 +40,7 @@ document.getElementById('altbaslik').textContent =
 const enIyi=(oz.en_iyi_3&&oz.en_iyi_3[0])||{};
 const kartlar=[['Best selection_score',(enIyi.selection_score??'-')],
   ['Best step',(enIyi.adim??'-')],['Total steps',(oz.toplam_adim??'-')],
-  ['Training sentences',(vr.train??'-')],['Batch',(hp.batch??'-')],
+  ['Batch',(hp.batch??'-')],
   ['Epoch',(hp.epoch??'-')],['Duration (min)',(oz.toplam_dakika??'-')]];
 document.getElementById('kartlar').innerHTML =
   kartlar.map(k=>`<div class="kart"><div class="b">${k[0]}</div><div class="d">${k[1]}</div></div>`).join('');
